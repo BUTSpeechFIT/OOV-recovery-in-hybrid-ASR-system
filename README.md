@@ -4,3 +4,4 @@ Out-of-vocabulary word recovery system makes use of a hybrid decoding network wi
 ## What you need to run it:
 - A hybrid decoder: https://github.com/kate-egorova/ASR-hybrid-decoding
 - OpenFST tool updated to work with triple weight of costs, start times and end times. See README in pywrapfst-master for installation guide
+- copy scripts from this repository to corresponding folders in your kaldi system build
