@@ -1,23 +1,15 @@
-#PWIP=$1
-#PLMSF=$2
-#PC=$3
-
-lang_dir=$1
-graph_dir=$2
+lang_dir=$1 # hybrid lang directory used for building decoding graph
+graph_dir=$2 # graph dir with hybrid HCLG.fst
 beam=$3
 lattice_beam=$4
 stage=$5
 
 prefix="data/lang_hybrid_"
 postfix=${lang_dir#"$prefix"}
-#postfix=${_dir} #PWIP_${PWIP}_PLMSF_${PLMSF}_PC_${PC}
 baseline_lang=lang_baseline_ngram_oovs
-#hybrid_lang=data/lang_hybrid_$postfix
 
 . ./cmd.sh
 . ./path.sh
-
-#stage=6
 
 beams=beam_${beam}_lb_${lattice_beam}
 
@@ -38,7 +30,7 @@ fi
 
 if [ $stage -le 1 ]; then
   echo "index creation"
-  # data/kws_train_360/ dir must include file called utter_id with utterance labels in the first column and numbers from one in the second column
+  echo "data/kws_train_360/ dir must include file called utter_id with utterance labels in the first column and numbers from one in the second column"
   steps/make_index_output.sh --cmd "$decode_long_cmd" data/kws_train_360/ $lang_dir exp/nnet5a_clean_100_gpu/decode_train_clean_360_${postfix}_$beams/ exp/nnet5a_clean_100_gpu/decode_train_clean_360_${postfix}_$beams/kws
 fi
 if [ $stage -le 2 ]; then
