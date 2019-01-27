@@ -552,13 +552,4 @@ cdef class FarWriter(object):
   cpdef string far_type(self)
 
 
-## BEER extension ##
 
-#cdef extern from "obsfst.h" nogil:
-
-#    cdef fst.FstClass* CreateObsFst(const double*, const int,
- #       const int, fst.SymbolTable*, fst.SymbolTable*)
-
-#cdef extern from "ttt_python_interface.h" nogil:
-#    cdef fst.VectorFstClass* CreateIndexFst()
- #   cdef fst.WeightClass* IndexWeight(float, double, double)
