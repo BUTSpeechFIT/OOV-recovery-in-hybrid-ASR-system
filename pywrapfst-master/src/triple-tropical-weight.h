@@ -16,7 +16,7 @@
 #include <iosfwd>
 #include <iostream>
 #include <sstream>
-#include </homes/kazi/iegorova/TOOLS/pywrapfst-master/src/tropical_max_weight.h>
+#include <src/tropical_max_weight.h>
 
 using namespace std;
 
