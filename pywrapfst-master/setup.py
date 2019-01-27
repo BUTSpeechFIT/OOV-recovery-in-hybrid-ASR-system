@@ -6,11 +6,11 @@ import sys
 
 exts = cythonize(
     Extension('pywrapfst',
-        sources=['src/registring_shit.cc', 'src/info-impl.cc', 'src/weight-class.cc', 'src/pywrapfst.pyx'],
+        sources=['src/registring_fst_type.cc', 'src/info-impl.cc', 'src/weight-class.cc', 'src/pywrapfst.pyx'],
         language='c++',
         extra_compile_args=['-std=c++11'],
         libraries=['fst', 'fstscript', 'fstfar', 'fstfarscript'],
-        include_dirs=[os.path.join(sys.prefix, 'include'), np.get_include(), "/homes/kazi/iegorova/TOOLS/Openfst-1.6.3/include"]
+        include_dirs=[os.path.join(sys.prefix, 'include'), np.get_include()]
     ),
     include_path=['src'],
 )
