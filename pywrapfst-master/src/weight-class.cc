@@ -2,8 +2,8 @@
 // finite-state transducer library.
 
 #include <fst/script/weight-class.h>
-#include </homes/kazi/iegorova/TOOLS/pywrapfst-master/src/triple-tropical-weight.h>
-#include </homes/kazi/iegorova/TOOLS/pywrapfst-master/src/tropical_max_weight.h>
+#include <src/triple-tropical-weight.h>
+#include <src/tropical_max_weight.h>
 #include <iostream>
 #include <fst/string-weight.h>
 
