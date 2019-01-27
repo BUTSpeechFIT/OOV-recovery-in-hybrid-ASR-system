@@ -2,7 +2,7 @@
 
 Fork of the official [OpenFst python wrapper](http://www.openfst.org/twiki/bin/view/FST/PythonExtension)
 
-# Requirements
+## Requirements
 
 In order to install **pywrapfst** the following tools are required:
 
@@ -16,7 +16,7 @@ Though not required, we strongly recommend the use of the
 [Anaconda](https://docs.anaconda.com/anaconda/) python distribution as
 it grealty simplifies depedencies.
 
-# Installation
+## Installation
 
 In **pywrapfst** root directory run:
 
@@ -31,6 +31,6 @@ You can check if the installation was successful by running:
 
     $ python -c "import pywrapfst; print('ok')"
 
-# Usage
+
 
 
