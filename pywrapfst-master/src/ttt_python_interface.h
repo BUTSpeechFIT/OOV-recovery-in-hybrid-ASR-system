@@ -7,8 +7,8 @@
 #include <fst/float-weight.h>
 #include <fst/weight.h>
 #include <fst/script/fst-class.h>
-#include </homes/kazi/iegorova/TOOLS/pywrapfst-master/src/tropical_max_weight.h>
-#include </homes/kazi/iegorova/TOOLS/pywrapfst-master/src/triple-tropical-weight.h>
+#include <src/tropical_max_weight.h>
+#include <src/triple-tropical-weight.h>
 //#include <fst/string-weight.h>
 
 using namespace fst;
